@@ -70,6 +70,7 @@ public class EngineService {
             sumOfPlaces = sumOfPlaces + score.getPlace();
         }
         Pair<String, Integer> userAndHowManyGames = new Pair<>(gameUser.getUsername(), listOfScores.size()) {
+
             @Override
             public String toString() {
                 return gameUser.getUsername()+"  "+ "("+listOfScores.size()+")";
